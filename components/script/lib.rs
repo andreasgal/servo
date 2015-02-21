@@ -24,6 +24,7 @@
 #[macro_use]
 extern crate log;
 
+extern crate azure;
 #[macro_use] extern crate bitflags;
 extern crate core;
 extern crate devtools_traits;

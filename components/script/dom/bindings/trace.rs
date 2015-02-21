@@ -63,6 +63,7 @@ use std::sync::mpsc::{Receiver, Sender};
 use string_cache::{Atom, Namespace};
 use style::properties::PropertyDeclarationBlock;
 use url::Url;
+use azure::azure_hl::{CompositionOp, JoinStyle, CapStyle};
 
 
 /// A trait to allow tracing (only) DOM objects.
@@ -225,6 +226,7 @@ no_jsmanaged_fields!(WindowProxyHandler);
 no_jsmanaged_fields!(UntrustedNodeAddress);
 no_jsmanaged_fields!(LengthOrPercentageOrAuto);
 no_jsmanaged_fields!(RGBA);
+no_jsmanaged_fields!(CompositionOp, JoinStyle, CapStyle);
 
 impl JSTraceable for Box<ScriptChan+Send> {
     #[inline]
